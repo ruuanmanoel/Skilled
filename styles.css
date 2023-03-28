@@ -1,0 +1,165 @@
+:root{
+    --main-color: rgb(19, 24, 62);
+    --text-color: rgb(132, 133, 148);
+    --gradient: linear-gradient(to top, rgb(242, 49, 157),rgb(255, 107, 79));
+    --gradient-secondary: linear-gradient(to top, rgb(242, 49, 157),rgb(94, 77, 245));
+    --link-color: rgb(234, 68, 124);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(251, 252, 254);
+}
+#container{
+    padding: 20px;
+}
+p{
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-button{
+    width: 10rem;
+    background-color: var(--main-color);
+    color: rgb(250, 250, 255);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+.intro-heading{
+    color: var(--main-color);
+    font-size: 3rem;
+    margin-block: 1.4rem;
+}
+.intro-paragraph{
+    margin-bottom: 1rem;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.intro-btn{
+    background: var(--gradient);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 11rem;
+    padding: 1.3rem;
+    border:none;
+    border-radius: 2rem ;
+    margin-bottom: 2rem;
+}
+.intro-image{
+    width: 23rem;
+
+}
+.intro-card{
+    background: var(--gradient);
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.intro-image{
+    width: 400px;
+    height: 400px;
+    background: url(assets/image-hero-mobile.png) no-repeat center center;
+}
+/*Area dos card*/
+.course-card{
+    background-color: #fff;
+    padding:1rem 2rem;
+    margin-bottom: 2rem ;
+}
+.course-card__logo{
+    margin-top: -2.5rem;
+    margin-bottom: .9rem;
+}
+.course-card__heading{
+    margin-bottom: 1rem;
+}
+.course-card__description{
+    margin-bottom: 1rem;
+}
+.course-card__link{
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.footer{
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 1.2rem;
+    padding-top: 2rem;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-button{
+    background: var(--gradient-secondary);
+    width: 10rem;
+    padding: 1.5rem;
+    border:none;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+@media (min-width:720px) {
+    
+}
+
+@media (min-width: 1000px){
+#container{
+    padding: 0;
+}
+.header{
+   width: 70%;
+   margin-inline: auto;
+   padding-top: 1rem;
+   position: absolute;
+   left: 15%;
+}
+.intro{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 7rem;
+   
+
+   
+}
+
+.intro-image{
+    width:45rem;
+    height: 45rem;
+    background: url(assets/image-hero-desktop.png) no-repeat left bottom;
+
+}   
+.course-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem;
+}
+.course-card, .intro-card{
+    width: 20rem;
+    padding-bottom: 3rem;
+    margin: 1rem;
+}
+}
